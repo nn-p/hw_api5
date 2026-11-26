@@ -11,7 +11,7 @@ def test_get_with_query_parameters():
 
     assert response.status_code == 200, "Статус код должен быть 200"
     data = response.json()
-    assert data["args"]["foo1"] == "wrong_value", "Параметр foo1 не совпадает"
+    assert data["args"]["foo1"] == "bar1", "Параметр foo1 не совпадает"
     assert data["args"]["foo2"] == "bar2", "Параметр foo2 не совпадает"
 
 
